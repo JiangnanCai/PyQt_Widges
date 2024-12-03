@@ -7,7 +7,7 @@ from PyQt5.QtGui import QFontMetrics
 
 
 class ClickableLine(QtWidgets.QPushButton):
-    padding = 1
+    padding = 2
 
     def __init__(self, text, parent=None):
         super(ClickableLine, self).__init__(parent)
@@ -63,9 +63,18 @@ class SentenceLine(QtWidgets.QWidget):
         self.setLayout(self.layout)
 
         self.clickable_lines = []
-        for line in self.get_lines():
-            c_line = ClickableLine(line, self)
+        self.lines = self.get_lines()
+        max_len = len(max(self.lines, key=len))
+        for index, line in enumerate(self.lines):
+
+            new_line = line + ' ' * (max_len - len(line)) \
+                if len(line) < max_len \
+                   and index != len(self.lines)-1 \
+                else line
+
+            c_line = ClickableLine(new_line, self)
             c_line.clicked.connect(self.state_synchronize)
+
             self.clickable_lines.append(c_line)
             self.layout.addWidget(c_line)
 
@@ -85,7 +94,7 @@ class SentenceLine(QtWidgets.QWidget):
         start, end = 0, 0
         while end <= len(words):
             cur_text = words[start:end]
-            if self.font_metrics.width(' '.join(cur_text)) + 3 * len(cur_text) < self.width():
+            if self.font_metrics.width(' '.join(cur_text)) + 2 * len(cur_text) < self.width():
                 end += 1
                 continue
             else:
