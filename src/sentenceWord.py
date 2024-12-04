@@ -55,7 +55,7 @@ class LineWord(QtWidgets.QWidget):
         self.setWindowFlag(Qt.FramelessWindowHint)
 
         self.layout = QtWidgets.QHBoxLayout(self)
-        self.layout.setContentsMargins(3, 3, 3, 3)
+        self.layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(self.layout)
 
         self.words = text_buttons

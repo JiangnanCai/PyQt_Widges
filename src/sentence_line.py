@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFontMetrics
@@ -49,9 +49,17 @@ class ClickableLine(QtWidgets.QPushButton):
 
 
 class SentenceLine(QtWidgets.QWidget):
-    def __init__(self, text, width, parent=None):
+    checked_signal = QtCore.pyqtSignal(bool)
+    audio_play_signal = QtCore.pyqtSignal(float, float)
+    audio_pause_signal = QtCore.pyqtSignal(bool)
+    is_checked = False
+
+    start_time = 0.
+    end_time = 0.
+
+    def __init__(self, sentence, width, parent=None):
         super(SentenceLine, self).__init__(parent)
-        self.text = text
+        self.text = sentence
         self.setFixedWidth(width)
         self.setWindowFlag(Qt.FramelessWindowHint)
 
@@ -59,38 +67,65 @@ class SentenceLine(QtWidgets.QWidget):
         self.font = clickable_line.font()
         self.font_metrics = QFontMetrics(self.font)
 
-        self.layout = QtWidgets.QVBoxLayout(self)
-        self.setLayout(self.layout)
+        self.setLayout(QtWidgets.QVBoxLayout())
 
-        self.clickable_lines = []
-        self.lines = self.get_lines()
-        max_len = len(max(self.lines, key=len))
-        for index, line in enumerate(self.lines):
+        self.lines = self._lines
+        self.clickable_lines = self._clickable_lines
 
-            new_line = line + ' ' * (max_len - len(line)) \
-                if len(line) < max_len \
-                   and index != len(self.lines)-1 \
-                else line
+    @property
+    def _clickable_lines(self):
+        res = []
+        max_len = max(len(line) for line in self.lines)
 
-            c_line = ClickableLine(new_line, self)
+        align_lines = [
+            line.ljust(max_len)
+            if index != len(self.lines) - 1
+            else line
+            for index, line in enumerate(self.lines)
+        ]
+
+        for line in align_lines:
+            c_line = ClickableLine(line, self)
             c_line.clicked.connect(self.state_synchronize)
+            self.layout().addWidget(c_line)
 
-            self.clickable_lines.append(c_line)
-            self.layout.addWidget(c_line)
+            res.append(c_line)
+        return res
 
     def state_synchronize(self):
-        sender = self.sender()  # 获取发送信号的复选框
-        for c_line in self.clickable_lines:
-            c_line.setChecked(sender.isChecked())
+        state = self.sender().isChecked()
+        if state:
+            self.set_checked()
+        else:
+            self.set_not_checked()
 
-    def get_lines(self):
+    def set_checked(self):
+        for c_line in self.clickable_lines:
+            c_line.setChecked(True)
+        self.is_checked = True
+        self.checked_signal.emit(True)
+        self.audio_play_signal.emit(self.start_time, self.end_time)
+
+    def set_not_checked(self):
+        for c_line in self.clickable_lines:
+            c_line.setChecked(False)
+        self.is_checked = False
+        self.checked_signal.emit(False)
+        self.audio_pause_signal.emit(True)
+
+    def set_state(self, bool_val):
+        for c_line in self.clickable_lines:
+            c_line.setChecked(bool_val)
+        self.is_checked = bool_val
+
+    @property
+    def _lines(self):
         if not self.text:
             return []
 
         words = [word for word in self.text.split()]
 
         lines = []
-
         start, end = 0, 0
         while end <= len(words):
             cur_text = words[start:end]
@@ -98,8 +133,8 @@ class SentenceLine(QtWidgets.QWidget):
                 end += 1
                 continue
             else:
-                lines.append(' '.join(words[start:end-1]))
-                start = end-1
+                lines.append(' '.join(words[start:end - 1]))
+                start = end - 1
 
         if start != len(words):
             lines.append(' '.join(words[start:len(words)]))
@@ -108,20 +143,10 @@ class SentenceLine(QtWidgets.QWidget):
 
 
 if __name__ == '__main__':
-
-    # app = QApplication(sys.argv)
-    # st = "The human body has an estimated 37.2 trillion cells. Each type of cell has a unique job. " \
-    #      "Knowing each cell's job can help scientists better understand health and diseases such as cancer."
-    # cc = ClickableLine(st)
-    # cc.setWindowTitle('PyQt5 Demo')
-    # cc.show()
-    # sys.exit(app.exec_())
-    # ------------------------------------------------------------------------------------------------------------------
     app = QApplication(sys.argv)
     st = "The human body has an estimated 37.2 trillion cells. Each type of cell has a unique job. " \
          "Knowing each cell's job can help scientists better understand health and diseases such as cancer."
-    cc = SentenceLine(st, 100)
+    cc = SentenceLine(st, 300)
     cc.setWindowTitle('PyQt5 Demo')
     cc.show()
     sys.exit(app.exec_())
-    # ------------------------------------------------------------------------------------------------------------------
