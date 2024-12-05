@@ -1,11 +1,13 @@
 import sys
+import functools
 
 from PyQt5 import QtWidgets, QtCore
 
 
-from article_line import ArticleLine
-# from articleWord import ArticleWord
-from audio_player import AudioPlayer
+from src.page_audio_detail.article_line import ArticleLine
+from src.page_audio_detail.article_word import ArticleWord
+from src.page_audio_detail.audio_player import AudioPlayer
+from src.common_widget.top_bar import TopBar
 
 
 class SelectButtons(QtWidgets.QWidget):
@@ -68,12 +70,15 @@ class SentenceWordScrollArea(QtWidgets.QScrollArea):
         self.setStyleSheet("QWidget {border: 0px; background-color: white; border-radius: 10px;}")
 
 
-class AudioArticlePage(QtWidgets.QWidget):
+class PageAudioDetail(QtWidgets.QWidget):
     def __init__(self, article, title, date, audio, parent=None):
-        super(AudioArticlePage, self).__init__(parent)
+        super(PageAudioDetail, self).__init__(parent)
 
         self.layout = QtWidgets.QVBoxLayout()
         self.setLayout(self.layout)
+
+        self.top_bar = TopBar(title)
+        self.layout.addWidget(self.top_bar)
 
         self.audio_play = AudioPlayer(title, date, audio)
         self.layout.addWidget(self.audio_play)
@@ -85,48 +90,73 @@ class AudioArticlePage(QtWidgets.QWidget):
         self.layout.addWidget(self.stack_widget)
 
         self.page_line = SentenceLineScrollArea(article)
-        for segment in self.page_line.article_widget.stc_lines:
-            segment.audio_play_signal.connect(self.audio_play.slider.play_range)
-            segment.audio_play_signal.connect(self.audio_play.on_play_stop_clicked)
-            segment.audio_pause_signal.connect(self.audio_play.slider.play_pause)
-            self.audio_play.slider.end_signal.connect(segment.set_not_checked)
-
-            # todo: 播放的时候，随着语音进度点亮
-        # self.page_word = SentenceWordScrollArea(article)
+        self.page_word = SentenceWordScrollArea(article)
 
         self.stack_widget.addWidget(self.page_line)
-        # self.stack_widget.addWidget(self.page_word)
+        self.stack_widget.addWidget(self.page_word)
 
         self.select_buttons.sentence_base.clicked.connect(lambda: self.stack_widget.setCurrentIndex(0))
-        # self.select_buttons.word_base.clicked.connect(lambda: self.stack_widget.setCurrentIndex(1))
+        self.select_buttons.word_base.clicked.connect(lambda: self.stack_widget.setCurrentIndex(1))
+        self.stack_widget.currentChanged.connect(self.on_change)
+
+        for segment in self.page_line.article_widget.stc_lines:
+            segment.audio_play_signal.connect(self.audio_play.slider.play_range)
+            segment.audio_pause_signal.connect(self.audio_play.slider.player.pause)
+
+            segment.audio_play_signal.connect(self.audio_play.on_play_stop_clicked)
+            segment.audio_pause_signal.connect(self.audio_play.on_play_stop_clicked)
+
+            self.audio_play.slider.end_signal.connect(segment.set_not_checked)
+            self.audio_play.slider.player.positionChanged.connect(
+                functools.partial(self.play_in_range_segment, segment)
+            )
+
+    def on_change(self):
+
+        if self.stack_widget.currentIndex() == 1:
+            for stc_words in self.page_word.article_widget.sentence_lines:
+                for word in stc_words.words:
+                    word.audio_play_signal.connect(self.audio_play.slider.play_range)
+
+                    # # todo: 应该是一个时间轴，而不是这样的文件，类似字幕的 srt 文件吧
+                    self.audio_play.slider.player.positionChanged.connect(
+                        functools.partial(self.play_in_range_word, word)
+                    )
+
+    def play_in_range_segment(self, segment):
+        # 随着录音播放的进度高亮句子
+
+        pos = self.audio_play.slider.player.position()
+        if pos in range(int(segment.start_time), int(segment.end_time)):
+            if not segment.is_checked:
+                segment.set_checked()
+        else:
+            if segment.is_checked:
+                segment.set_not_checked()
+
+        # todo: 某一段高亮的时候，自动放置在中心位置
+        # 简易版本，后续优化
+        max_scroll_value = self.page_line.verticalScrollBar().maximum()
+        max_pos_value = self.audio_play.slider.player.duration()
+        set_scroll_value = int((pos / max_pos_value) * max_scroll_value)
+        self.page_line.verticalScrollBar().setValue(set_scroll_value)
+
+    def play_in_range_word(self, word):
+        pos = self.audio_play.slider.player.position()
+
+        if pos in range(int(word.start_time * 1000), int(word.end_time * 1000)):
+            if not word.isChecked():
+                word.setChecked(True)
+        else:
+            if word.isChecked():
+                word.setChecked(False)
 
 
 if __name__ == '__main__':
-    art = [
-        "Imagine a wheelchair equipped with wheels flexible enough to move over all kinds of barriers, including the raised edges of streets.",
-        "A robotic delivery vehicle could use the same wheels to go up stairs to deliver food or other purchases.",
-        "This is what researchers from the Korea Institute of Machinery and Materials, or KIMM,",
-        "see as the future for their morphing wheel. The wheels can change their shape and can roll over barriers",
-        "up to 1.3 times their radius. The radius of a wheel is half its height. Other possible applications for the morphing wheel include robots that gather information about an enemy in the battlefield.",
-        "The KIMM team also hopes that morphing wheels will one day be used with two and four legad robots.",
-        "Now the movement of those machines is limited. Too much shaking is also a problem. With the morphing wheels, the robots could carry objects that need",
-        "smooth movement for industrial use. Songhook is the lead researcher at South Korea's KIMM and a member of the AI robotics research team.",
-        "He said the goal is to make the wheels work at the average speed of a car. That is about 100 kilometers per hour.",
-        "Wheels developed for a similar purpose, such as airless wheels have flexibility, but are limited in their ability to overcome barriers.",
-        "Said Songhook. The difference between airless wheels and the morphing wheel is that airless wheels are always soft,",
-        "but the morphing wheels can change from hard to soft when they meet a barrier.",
-        "They can then return to being hard to permit faster travel where there are no barriers.",
-        "The morphing wheel is made of an outer circle of chain and a series of wires running through its central hub.",
-        "A sensor controls the stiffness of the wires in reaction to the barriers in its path.",
-        "Song's team demonstrated to riders a model of a wheelchair riding on morphing wheels as it climbed stairs with 18 centimeter steps.",
-        "The team has also tested a device using the wheel at speeds of up to 30 kilometers an hour.",
-        "I'm Andrew Smith.",
-    ]
-    from data_parser import article_object
+    from src.data_parser import article_object
     app = QtWidgets.QApplication(sys.argv)
     aud = r"D:\cai_dev\PyQt_Widges\audio\123.mp3"
-    cc = AudioArticlePage(article_object, "美丽湾", "2024-12-03", aud)
-    # cc = SelectButtons()
+    cc = PageAudioDetail(article_object, "美丽湾", "2024-12-03", aud)
     cc.setWindowTitle('PyQt5 Demo')
     cc.show()
     sys.exit(app.exec_())

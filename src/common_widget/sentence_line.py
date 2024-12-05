@@ -94,29 +94,32 @@ class SentenceLine(QtWidgets.QWidget):
 
     def state_synchronize(self):
         state = self.sender().isChecked()
-        if state:
-            self.set_checked()
-        else:
-            self.set_not_checked()
+        # state: 新状态
+        # self.is_check 老状态
+        # ---------------------------------------------------------------
+        # 这种情况就是点击高亮，然后点击取消高亮，两种状态之间切换
+        # if state:
+        #     self.set_checked()
+        #     self.audio_play_signal.emit(self.start_time, self.end_time)
+        # else:
+        #     self.set_not_checked()
+        #     self.audio_pause_signal.emit(True)
+        # ---------------------------------------------------------------
+        # 这种就是只有一种状态，只有从非高亮 -> 高亮的状态
+        self.set_checked()
+        self.audio_play_signal.emit(self.start_time, self.end_time)
 
     def set_checked(self):
         for c_line in self.clickable_lines:
             c_line.setChecked(True)
         self.is_checked = True
         self.checked_signal.emit(True)
-        self.audio_play_signal.emit(self.start_time, self.end_time)
 
     def set_not_checked(self):
         for c_line in self.clickable_lines:
             c_line.setChecked(False)
         self.is_checked = False
-        self.checked_signal.emit(False)
-        self.audio_pause_signal.emit(True)
-
-    def set_state(self, bool_val):
-        for c_line in self.clickable_lines:
-            c_line.setChecked(bool_val)
-        self.is_checked = bool_val
+        # self.checked_signal.emit(False)  # 点灭的时候就不需要发信号了，因为只有亮的时候才需要 exclusive
 
     @property
     def _lines(self):

@@ -2,8 +2,8 @@ import sys
 
 from PyQt5 import QtWidgets, QtCore
 
-from sentence_line import SentenceLine
-from audio_player import AudioSlider
+from src.common_widget.sentence_line import SentenceLine
+from src.page_audio_detail.audio_player import AudioSlider
 
 
 class AudioCheck(QtWidgets.QWidget):

@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFontMetrics
@@ -8,15 +8,23 @@ from PyQt5.QtGui import QFontMetrics
 
 class ClickableWord(QtWidgets.QPushButton):
     padding = 1
+    start_time = 0.0
+    end_time = 0.0
+    audio_play_signal = QtCore.pyqtSignal(float, float)
 
     def __init__(self, text, parent=None):
         super(ClickableWord, self).__init__(parent)
         self.setText(text)
         self.setWindowFlag(Qt.FramelessWindowHint)
-
+        self.text = text
         self.set_style()
         self.adjust_size(text)
         self.setCheckable(True)
+
+        self.clicked.connect(self.word_play)
+
+    def word_play(self):
+        self.audio_play_signal.emit(int(self.start_time * 1000), int(self.end_time * 1000))
 
     def adjust_size(self, text):
         font_metrics = QFontMetrics(self.font())
@@ -66,38 +74,48 @@ class LineWord(QtWidgets.QWidget):
 
 
 class SentenceWord(QtWidgets.QWidget):
-    def __init__(self, text, width, parent=None):
+    def __init__(self, segment, width, parent=None):
         super(SentenceWord, self).__init__(parent)
 
         self.setFixedWidth(width)
         self.setWindowFlag(Qt.FramelessWindowHint)
 
-        self.layout = QtWidgets.QVBoxLayout(self)
-        self.layout.setContentsMargins(0, 0, 0, 0)
-        self.setLayout(self.layout)
+        self.setLayout( QtWidgets.QVBoxLayout())
+        self.layout().setContentsMargins(0, 0, 0, 0)
 
-        self.text = text
+        self.segment = segment
         self.words = self._words
-        for line in self.get_lines():
+        self.lines = self._lines
+
+        for line in self.lines:
             line_word = LineWord(line, self.width(), self)
-            self.layout.addWidget(line_word)
+            self.layout().addWidget(line_word)
 
         self.spacer_v = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.layout.addSpacerItem(self.spacer_v)
+        self.layout().addSpacerItem(self.spacer_v)
 
     @property
     def _words(self):
-        if not self.text:
+        if not self.segment.words:
             return []
 
-        words = [ClickableWord(word) for word in self.text.split()]
+        words = []
         button_group = QtWidgets.QButtonGroup(self)
         button_group.setExclusive(True)
-        for word in words:
-            button_group.addButton(word)
+
+        for word in self.segment.words:
+            c_word = ClickableWord(word.text)
+
+            c_word.start_time = word.start
+            c_word.end_time = word.end
+
+            button_group.addButton(c_word)
+            words.append(c_word)
+
         return words
 
-    def get_lines(self):
+    @property
+    def _lines(self):
         if not self.words:
             return []
 

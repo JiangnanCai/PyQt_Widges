@@ -6,7 +6,7 @@ from PyQt5 import QtWidgets, QtCore, QtMultimedia, QtGui
 
 SIZE_EXPAND = QtWidgets.QSizePolicy.Expanding
 SIZE_MINI = QtWidgets.QSizePolicy.Minimum
-ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 ASSET_DIR = os.path.join(ROOT_DIR, "asset")
 AUDIO_DIR = os.path.join(ROOT_DIR, "audio")
 
@@ -130,7 +130,6 @@ class AudioSlider(QtWidgets.QSlider):
     def play_pause(self):
         if self.player.state() == QtMultimedia.QMediaPlayer.PlayingState:
             self.player.pause()
-            self.end_signal.emit()
         else:
             self.player.play()
 
