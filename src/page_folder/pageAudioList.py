@@ -80,6 +80,7 @@ class PageAudioList(QtWidgets.QWidget):
 
         self.search_line = QtWidgets.QLineEdit()
         self.layout().addWidget(self.search_line)
+        self.search_line.setFixedSize(250, 30)
 
         self.audio_list = FolderScrollArea()
         self.layout().addWidget(self.audio_list)
@@ -100,7 +101,6 @@ class PageAudioList(QtWidgets.QWidget):
 
         # 本来想整个进度条的，目前看来没啥意义
         self.thread = WorkerThread(file_path)
-        # self.thread.progress_updated.connect(self.update_progress)
         self.thread.finished.connect(self.task_finished)
         self.thread.start()
 

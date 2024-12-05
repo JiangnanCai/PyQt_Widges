@@ -16,41 +16,30 @@ class FolderScrollArea(QtWidgets.QScrollArea):
         self.setFixedWidth(250)
 
         self.widget = QtWidgets.QWidget(self)
-        self.widget.setMinimumHeight(400)
         self.widget_group = []
 
         self.widget.setLayout(QtWidgets.QVBoxLayout(self.widget))
-        self.widget.layout().setContentsMargins(0, 2, 0, 2)
+        self.widget.layout().setAlignment(QtCore.Qt.AlignTop)
 
-        # self.add_audio_file("录音1", "2024.12.04", "06:30")
-        # self.add_audio_file("录音2", "2024.12.04", "06:30")
-        # self.add_audio_file("录音3", "2024.12.04", "06:30")
-        # self.add_audio_file("录音3", "2024.12.04", "06:30")
-        # self.add_audio_file("录音3", "2024.12.04", "06:30")
-        self.add_audio_file("录音3", "2024.12.04", "06:30")
-        self.widget.layout().addItem(QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Minimum,
-                                                           QtWidgets.QSizePolicy.Expanding))
         self.setWidget(self.widget)
+        self.setWidgetResizable(True)
+
+        self.widget.layout().setContentsMargins(0, 5, 0, 0)
 
         self.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
     def add_audio_file(self, title, date, end_time):
-        for i in range(self.widget.layout().count()):
-            print(self.widget.layout().itemAt(i))
-            if isinstance(self.widget.layout().itemAt(i), QtWidgets.QSpacerItem):
-                self.widget.layout().removeItem(self.widget.layout().itemAt(i))
 
         tmp_obj_name = str(uuid4())
         folder = FolderSwipeAction(title, date, end_time, self.width, self.height)
         folder.delete_signal.connect(self.delete_audio_file)
         folder.setObjectName(tmp_obj_name)
         folder.setVisible(True)
-        folder.setEnabled(True)
 
         line = QtWidgets.QFrame()
         line.setObjectName(tmp_obj_name)
-        line.setFixedWidth(self.width - int(self.width / 10))
+        line.setFixedWidth(self.width)
         line.setFrameShape(QtWidgets.QFrame.HLine)
         line.setFrameShadow(QtWidgets.QFrame.Plain)
         line.setStyleSheet("QWidget {color: #BEBEBE;}")
@@ -61,9 +50,9 @@ class FolderScrollArea(QtWidgets.QScrollArea):
 
         self.widget.layout().addWidget(folder)
         self.widget.layout().addWidget(line)
-        self.widget.layout().setAlignment(line, QtCore.Qt.AlignCenter)
-        self.widget.layout().addSpacerItem(QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Minimum,
-                                                                 QtWidgets.QSizePolicy.Expanding))
+
+        self.ensureWidgetVisible(folder)
+        self.ensureWidgetVisible(line)
 
     def delete_audio_file(self, obj_name):
         tmp_widget_group = []
