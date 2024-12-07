@@ -18,35 +18,16 @@ def pos2strftime(position):
 class TitleTimeLabel(QtWidgets.QWidget):
     def __init__(self, title, date, parent=None):
         super(TitleTimeLabel, self).__init__(parent)
-        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-
         self.layout = QtWidgets.QVBoxLayout()
-        self.layout.setContentsMargins(0, 0, 0, 0)
-
-        self.title_widget = QtWidgets.QWidget()
-        self.title_layout = QtWidgets.QHBoxLayout()
-        self.title_layout.setContentsMargins(0, 0, 0, 0)
-        self.title_widget.setLayout(self.title_layout)
+        self.setLayout(self.layout)
 
         self.title_label = QtWidgets.QLabel(title)
-        self.title_spacer = QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI)
-        self.title_layout.addWidget(self.title_label)
-        self.title_layout.addSpacerItem(self.title_spacer)
-
-        self.layout.addWidget(self.title_widget)
-
-        self.date_widget = QtWidgets.QWidget()
-        self.date_layout = QtWidgets.QHBoxLayout()
-        self.date_layout.setContentsMargins(0, 0, 0, 0)
-        self.date_widget.setLayout(self.date_layout)
-
         self.date_label = QtWidgets.QLabel(date)
-        self.date_spacer = QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI)
-        self.date_layout.addWidget(self.date_label)
-        self.date_layout.addSpacerItem(self.date_spacer)
 
-        self.layout.addWidget(self.date_widget)
-        self.setLayout(self.layout)
+        self.layout.setAlignment(QtCore.Qt.AlignLeft)
+        self.layout.addWidget(self.title_label)
+        self.layout.addWidget(self.date_label)
+        self.layout.setContentsMargins(0, 0, 0, 0)
 
 
 class AudioSlider(QtWidgets.QSlider):
@@ -65,14 +46,14 @@ class AudioSlider(QtWidgets.QSlider):
                    }
 
                    QSlider:sub-page:horizontal {
-                       background: rgb(90,49,255);
+                       background: #93D2F3;
                        border-radius: 2px;
                        margin-top:8px;
                        margin-bottom:8px;
                    }
 
                    QSlider::add-page:horizontal {
-                       background: rgb(255,255, 255);
+                       background: rgb(230,230,230);
                        border: 0px solid #777;
                        border-radius: 2px;
                        margin-top:9px;
@@ -116,6 +97,7 @@ class AudioSlider(QtWidgets.QSlider):
                                   pos2strftime(self.player.duration()))
 
     def update_slider_position(self):
+
         self.setValue(self.player.position())
         self.time_signal.emit(pos2strftime(self.player.position()),
                               pos2strftime(self.player.duration()))
@@ -173,7 +155,6 @@ class AudioSlider(QtWidgets.QSlider):
 class TimeLabel(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super(TimeLabel, self).__init__(parent)
-        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
 
         self.layout = QtWidgets.QHBoxLayout()
         self.layout.setContentsMargins(0, 0, 0, 0)
@@ -181,10 +162,9 @@ class TimeLabel(QtWidgets.QWidget):
 
         self.start = QtWidgets.QLabel()
         self.end = QtWidgets.QLabel()
-        self.spacer = QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI)
 
         self.layout.addWidget(self.start)
-        self.layout.addSpacerItem(self.spacer)
+        self.layout.addSpacerItem(QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI))
         self.layout.addWidget(self.end)
 
 
@@ -199,33 +179,26 @@ class AudioButtons(QtWidgets.QWidget):
         self.play_mode = QtWidgets.QPushButton()
         self.play_mode.setIcon(QtGui.QIcon(os.path.join(ASSET_DIR, "循环.svg")))
 
-        self.spacer_expand_1 = QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI)
         self.back_15 = QtWidgets.QPushButton()
         self.back_15.setIcon(QtGui.QIcon(os.path.join(ASSET_DIR, "后退15s.svg")))
-
-        self.spacer_interval_1 = QtWidgets.QSpacerItem(1, 0, SIZE_MINI, SIZE_MINI)
 
         # button: play and stop
         self.play_stop = QtWidgets.QPushButton()
         self.play()
 
-        self.spacer_interval_2 = QtWidgets.QSpacerItem(1, 0, SIZE_MINI, SIZE_MINI)
         self.forward_15 = QtWidgets.QPushButton()
         self.forward_15.setIcon(QtGui.QIcon(os.path.join(ASSET_DIR, "快进15s.svg")))
 
-        self.spacer_expand_2 = QtWidgets.QSpacerItem(0, 0, SIZE_EXPAND, SIZE_MINI)
         self.delete = QtWidgets.QPushButton()
-        self.delete.setVisible(False)
+        # self.delete.setVisible(False)
         self.delete.setIcon(QtGui.QIcon(os.path.join(ASSET_DIR, "删除.svg")))
 
         self.layout.addWidget(self.play_mode)
-        self.layout.addSpacerItem(self.spacer_expand_1)
+        self.layout.addStretch(1)
         self.layout.addWidget(self.back_15)
-        self.layout.addSpacerItem(self.spacer_interval_1)
         self.layout.addWidget(self.play_stop)
-        self.layout.addSpacerItem(self.spacer_interval_2)
         self.layout.addWidget(self.forward_15)
-        self.layout.addSpacerItem(self.spacer_expand_2)
+        self.layout.addStretch(1)
         self.layout.addWidget(self.delete)
         self.setLayout(self.layout)
 
@@ -254,7 +227,6 @@ class AudioPlayer(QtWidgets.QWidget):
 
     def __init__(self, title, date, audio, parent=None):
         super(AudioPlayer, self).__init__(parent)
-        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
 
         self.layout = QtWidgets.QVBoxLayout()
         self.setLayout(self.layout)
@@ -278,9 +250,15 @@ class AudioPlayer(QtWidgets.QWidget):
         self.audio_buttons.play_stop.clicked.connect(self.on_play_stop_clicked)
         self.audio_buttons.back_15.clicked.connect(self.slider.back_15_second)
         self.audio_buttons.forward_15.clicked.connect(self.slider.forward_15_second)
+
         self.audio_piece_signal.connect(self.slider.play_range)
         self.slider.time_signal.connect(self.update_time)
         self.slider.end_signal.connect(self.on_play_stop_clicked)
+
+        self.setAutoFillBackground(True)
+        palette = QtGui.QPalette()
+        palette.setColor(QtGui.QPalette.Window, QtCore.Qt.white)
+        self.setPalette(palette)
 
     def update_time(self, cur_time, end_time):
         self.time_label.start.setText(cur_time)
@@ -297,6 +275,7 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     mu = os.path.join(AUDIO_DIR, "123.mp3")
     cc = AudioPlayer("珠海", "2024-11-22", mu)
+    # cc = AudioSlider(mu)
     cc.setWindowTitle('PyQt5 Demo')
     cc.show()
     sys.exit(app.exec_())

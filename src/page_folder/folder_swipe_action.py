@@ -5,47 +5,47 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 from src.common_widget.swipe_action import SwipeAction
 
 
-class FolderCover(QtWidgets.QWidget):
+class AudioCover(QtWidgets.QWidget):
+    clicked_signal = QtCore.pyqtSignal()
+
     def __init__(self, title, date, end_time, parent=None):
-        super(FolderCover, self).__init__(parent)
+        super(AudioCover, self).__init__(parent)
 
         self.setLayout(QtWidgets.QVBoxLayout())
-        # self.layout().setContentsMargins(0, 0, 0, 0)
-
-        self.title_widget = QtWidgets.QWidget()
-        self.title_widget.setLayout(QtWidgets.QHBoxLayout())
-        self.title_widget.layout().setContentsMargins(0, 0, 0, 0)
-        self.title_widget.layout().addWidget(QtWidgets.QLabel(title))
-        self.title_widget.layout().addSpacerItem(QtWidgets.QSpacerItem(0, 0,
-                                                                       QtWidgets.QSizePolicy.Expanding,
-                                                                       QtWidgets.QSizePolicy.Minimum))
-        self.layout().addWidget(self.title_widget)
+        self.layout().setContentsMargins(10, 0, 10, 0)
 
         self.time_widget = QtWidgets.QWidget()
         self.time_widget.setLayout(QtWidgets.QHBoxLayout())
         self.time_widget.layout().setContentsMargins(0, 0, 0, 0)
         self.time_widget.layout().addWidget(QtWidgets.QLabel(date))
-        self.time_widget.layout().addSpacerItem(QtWidgets.QSpacerItem(0, 0,
-                                                                      QtWidgets.QSizePolicy.Expanding,
-                                                                      QtWidgets.QSizePolicy.Minimum))
+        self.time_widget.layout().addStretch(1)
         self.time_widget.layout().addWidget(QtWidgets.QLabel(end_time))
+
+        self.layout().addWidget(QtWidgets.QLabel(title))
         self.layout().addWidget(self.time_widget)
 
+        self.layout().setAlignment(QtCore.Qt.AlignLeft)
 
-class FolderSwipeAction(QtWidgets.QWidget):
+    def mousePressEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:
+            self.clicked_signal.emit()
+
+
+class AudiSwipeAction(QtWidgets.QWidget):
     delete_signal = QtCore.pyqtSignal(str)
     rename_signal = QtCore.pyqtSignal(str)
+    enter_signal = QtCore.pyqtSignal(dict)
+    article_datas = None
 
     def __init__(self, title, date, end_time, width, height, parent=None):
-        super(FolderSwipeAction, self).__init__(parent)
-        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
+        super(AudiSwipeAction, self).__init__(parent)
 
         self.setFixedSize(width, height)
-        self.setMaximumHeight(height)
+
         self.setLayout(QtWidgets.QHBoxLayout())
         self.layout().setContentsMargins(0, 0, 0, 0)
 
-        self.cover = FolderCover(title, date, end_time)
+        self.cover = AudioCover(title, date, end_time)
         self.cover.setFixedSize(width, height)
 
         self.rename_button = QtWidgets.QPushButton("重命名")
@@ -63,6 +63,10 @@ class FolderSwipeAction(QtWidgets.QWidget):
 
         self.rename_button.clicked.connect(self.rename_signal_emit)
         self.delete_button.clicked.connect(self.delete_signal_emit)
+        self.cover.clicked_signal.connect(self.enter_signal_emit)
+
+    def enter_signal_emit(self):
+        self.enter_signal.emit(self.article_datas)
 
     def delete_signal_emit(self):
         self.delete_signal.emit(self.objectName())
@@ -74,7 +78,7 @@ class FolderSwipeAction(QtWidgets.QWidget):
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     # cc = FolderCover("新录音1", "2024.11.21", "06:30")
-    cc = FolderSwipeAction("新录音1", "2024.11.21", "06:30", 250, 50)
+    cc = AudiSwipeAction("新录音1", "2024.11.21", "06:30", 250, 50)
     cc.setWindowTitle('PyQt5 Demo')
     cc.show()
     sys.exit(app.exec_())

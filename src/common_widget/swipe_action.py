@@ -192,11 +192,11 @@ class SwipeAction(SmoothScrollArea):
         if source not in self.widgets:
             pass
         if event.type() == QEvent.MouseButtonPress:
-            self.mouse_press_handle(event)
+            return self.mouse_press_handle(event)
         elif event.type() == QEvent.MouseMove:
-            self.mouse_move_handle(event)
+            return self.mouse_move_handle(event)
         elif event.type() == QEvent.MouseButtonRelease:
-            self.mouse_release_handle()
+            return self.mouse_release_handle()
         return super().eventFilter(source, event)
 
 

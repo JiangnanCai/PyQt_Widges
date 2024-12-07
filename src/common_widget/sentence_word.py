@@ -38,17 +38,17 @@ class ClickableWord(QtWidgets.QPushButton):
         css = """
             QPushButton {
                 background-color: #CECECE;
-                border-radius: 5;
+                border-radius: 3px;
                 border: none;
             }
             QPushButton:hover {
                 background-color: #9A9A9A;
-                border-radius: 5;
+                border-radius: 3px;
                 border: none;
             }
             QPushButton:checked {
                 background-color: #93D2F3;
-                border-radius: 5;
+                border-radius: 3px;
                 border: none;
             }
         """

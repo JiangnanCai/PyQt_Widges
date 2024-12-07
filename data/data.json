@@ -1,0 +1,2839 @@
+{
+    "text": " Imagine a wheelchair equipped with wheels flexible enough to move over all kinds of barriers, including the raised edges of streets. A robotic delivery vehicle could use the same wheels to go up stairs to deliver food or other purchases. This is what researchers from the Korea Institute of Machinery and Materials, or KIMM, see as the future for their morphing wheel. The wheels can change their shape and can roll over barriers up to 1.3 times their radius. The radius of a wheel is half its height. Other possible applications for the morphing wheel include robots that gather information about an enemy in the battlefield. The KIMM team also hopes that morphing wheels will one day be used with two and four legad robots. Now the movement of those machines is limited. Too much shaking is also a problem. With the morphing wheels, the robots could carry objects that need smooth movement for industrial use. Songhook is the lead researcher at South Korea's KIMM and a member of the AI robotics research team. He said the goal is to make the wheels work at the average speed of a car. That is about 100 kilometers per hour. Wheels developed for a similar purpose, such as airless wheels have flexibility, but are limited in their ability to overcome barriers. Said Songhook. The difference between airless wheels and the morphing wheel is that airless wheels are always soft, but the morphing wheels can change from hard to soft when they meet a barrier. They can then return to being hard to permit faster travel where there are no barriers. The morphing wheel is made of an outer circle of chain and a series of wires running through its central hub. A sensor controls the stiffness of the wires in reaction to the barriers in its path. Song's team demonstrated to riders a model of a wheelchair riding on morphing wheels as it climbed stairs with 18 centimeter steps. The team has also tested a device using the wheel at speeds of up to 30 kilometers an hour. I'm Andrew Smith.",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.98,
+            "end": 13.78,
+            "text": " Imagine a wheelchair equipped with wheels flexible enough to move over all kinds of barriers, including the raised edges of streets.",
+            "tokens": [
+                50364,
+                11739,
+                257,
+                22945,
+                15218,
+                365,
+                10046,
+                11358,
+                1547,
+                281,
+                1286,
+                670,
+                439,
+                3685,
+                295,
+                13565,
+                11,
+                3009,
+                264,
+                6005,
+                8819,
+                295,
+                8481,
+                13,
+                51064
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.12137468493714625,
+            "compression_ratio": 1.4451219512195121,
+            "no_speech_prob": 0.04187186807394028,
+            "confidence": 0.916,
+            "words": [
+                {
+                    "text": "Imagine",
+                    "start": 0.98,
+                    "end": 1.58,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "a",
+                    "start": 1.58,
+                    "end": 2.1,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "wheelchair",
+                    "start": 2.1,
+                    "end": 2.68,
+                    "confidence": 0.956
+                },
+                {
+                    "text": "equipped",
+                    "start": 2.68,
+                    "end": 3.68,
+                    "confidence": 0.93
+                },
+                {
+                    "text": "with",
+                    "start": 3.68,
+                    "end": 4.34,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "wheels",
+                    "start": 4.34,
+                    "end": 4.82,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "flexible",
+                    "start": 4.82,
+                    "end": 5.7,
+                    "confidence": 0.944
+                },
+                {
+                    "text": "enough",
+                    "start": 5.7,
+                    "end": 6.36,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "to",
+                    "start": 6.36,
+                    "end": 7.02,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "move",
+                    "start": 7.02,
+                    "end": 7.4,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "over",
+                    "start": 7.4,
+                    "end": 8.0,
+                    "confidence": 0.838
+                },
+                {
+                    "text": "all",
+                    "start": 8.0,
+                    "end": 8.38,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "kinds",
+                    "start": 8.38,
+                    "end": 8.9,
+                    "confidence": 0.946
+                },
+                {
+                    "text": "of",
+                    "start": 8.9,
+                    "end": 9.26,
+                    "confidence": 0.906
+                },
+                {
+                    "text": "barriers,",
+                    "start": 9.26,
+                    "end": 9.92,
+                    "confidence": 0.93
+                },
+                {
+                    "text": "including",
+                    "start": 10.5,
+                    "end": 11.18,
+                    "confidence": 0.509
+                },
+                {
+                    "text": "the",
+                    "start": 11.18,
+                    "end": 11.82,
+                    "confidence": 0.792
+                },
+                {
+                    "text": "raised",
+                    "start": 11.82,
+                    "end": 12.26,
+                    "confidence": 0.949
+                },
+                {
+                    "text": "edges",
+                    "start": 12.26,
+                    "end": 12.88,
+                    "confidence": 0.939
+                },
+                {
+                    "text": "of",
+                    "start": 12.88,
+                    "end": 13.3,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "streets.",
+                    "start": 13.3,
+                    "end": 13.78,
+                    "confidence": 0.903
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 15.22,
+            "end": 25.3,
+            "text": " A robotic delivery vehicle could use the same wheels to go up stairs to deliver food or other purchases.",
+            "tokens": [
+                51064,
+                316,
+                30468,
+                8982,
+                5864,
+                727,
+                764,
+                264,
+                912,
+                10046,
+                281,
+                352,
+                493,
+                13471,
+                281,
+                4239,
+                1755,
+                420,
+                661,
+                26762,
+                13,
+                51664
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.12137468493714625,
+            "compression_ratio": 1.4451219512195121,
+            "no_speech_prob": 0.04187186807394028,
+            "confidence": 0.964,
+            "words": [
+                {
+                    "text": "A",
+                    "start": 15.22,
+                    "end": 15.46,
+                    "confidence": 0.72
+                },
+                {
+                    "text": "robotic",
+                    "start": 15.46,
+                    "end": 16.02,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "delivery",
+                    "start": 16.02,
+                    "end": 16.82,
+                    "confidence": 0.981
+                },
+                {
+                    "text": "vehicle",
+                    "start": 16.82,
+                    "end": 17.56,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "could",
+                    "start": 17.56,
+                    "end": 18.5,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "use",
+                    "start": 18.5,
+                    "end": 18.94,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "the",
+                    "start": 18.94,
+                    "end": 19.4,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "same",
+                    "start": 19.4,
+                    "end": 19.78,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "wheels",
+                    "start": 19.78,
+                    "end": 20.3,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "to",
+                    "start": 20.3,
+                    "end": 20.9,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "go",
+                    "start": 20.9,
+                    "end": 21.14,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "up",
+                    "start": 21.14,
+                    "end": 21.46,
+                    "confidence": 0.881
+                },
+                {
+                    "text": "stairs",
+                    "start": 21.46,
+                    "end": 22.28,
+                    "confidence": 0.977
+                },
+                {
+                    "text": "to",
+                    "start": 22.28,
+                    "end": 22.72,
+                    "confidence": 0.911
+                },
+                {
+                    "text": "deliver",
+                    "start": 22.72,
+                    "end": 23.1,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "food",
+                    "start": 23.1,
+                    "end": 23.66,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "or",
+                    "start": 23.66,
+                    "end": 24.12,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "other",
+                    "start": 24.12,
+                    "end": 24.62,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "purchases.",
+                    "start": 24.62,
+                    "end": 25.3,
+                    "confidence": 0.983
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "seek": 2600,
+            "start": 26.72,
+            "end": 36.1,
+            "text": " This is what researchers from the Korea Institute of Machinery and Materials, or KIMM,",
+            "tokens": [
+                50396,
+                639,
+                307,
+                437,
+                10309,
+                490,
+                264,
+                6307,
+                9446,
+                295,
+                12089,
+                23194,
+                293,
+                19188,
+                12356,
+                11,
+                420,
+                591,
+                6324,
+                44,
+                11,
+                50864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.233158012231191,
+            "compression_ratio": 1.3840579710144927,
+            "no_speech_prob": 0.031690292060375214,
+            "confidence": 0.888,
+            "words": [
+                {
+                    "text": "This",
+                    "start": 26.72,
+                    "end": 27.22,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "is",
+                    "start": 27.22,
+                    "end": 27.56,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "what",
+                    "start": 27.56,
+                    "end": 27.88,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "researchers",
+                    "start": 27.88,
+                    "end": 28.74,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "from",
+                    "start": 28.74,
+                    "end": 29.3,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "the",
+                    "start": 29.3,
+                    "end": 29.8,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "Korea",
+                    "start": 29.8,
+                    "end": 30.24,
+                    "confidence": 0.865
+                },
+                {
+                    "text": "Institute",
+                    "start": 30.24,
+                    "end": 31.0,
+                    "confidence": 0.967
+                },
+                {
+                    "text": "of",
+                    "start": 31.0,
+                    "end": 31.5,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "Machinery",
+                    "start": 31.5,
+                    "end": 32.38,
+                    "confidence": 0.646
+                },
+                {
+                    "text": "and",
+                    "start": 32.38,
+                    "end": 32.74,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "Materials,",
+                    "start": 32.74,
+                    "end": 33.54,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "or",
+                    "start": 34.2,
+                    "end": 34.36,
+                    "confidence": 0.81
+                },
+                {
+                    "text": "KIMM,",
+                    "start": 34.36,
+                    "end": 36.1,
+                    "confidence": 0.782
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "seek": 2600,
+            "start": 36.52,
+            "end": 46.22,
+            "text": " see as the future for their morphing wheel. The wheels can change their shape and can roll over barriers",
+            "tokens": [
+                50864,
+                536,
+                382,
+                264,
+                2027,
+                337,
+                641,
+                1896,
+                79,
+                571,
+                5589,
+                13,
+                440,
+                10046,
+                393,
+                1319,
+                641,
+                3909,
+                293,
+                393,
+                3373,
+                670,
+                13565,
+                51392
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.233158012231191,
+            "compression_ratio": 1.3840579710144927,
+            "no_speech_prob": 0.031690292060375214,
+            "confidence": 0.887,
+            "words": [
+                {
+                    "text": "see",
+                    "start": 36.52,
+                    "end": 36.86,
+                    "confidence": 0.965
+                },
+                {
+                    "text": "as",
+                    "start": 36.86,
+                    "end": 37.12,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "the",
+                    "start": 37.12,
+                    "end": 37.34,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "future",
+                    "start": 37.34,
+                    "end": 37.96,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "for",
+                    "start": 37.96,
+                    "end": 38.72,
+                    "confidence": 0.958
+                },
+                {
+                    "text": "their",
+                    "start": 38.72,
+                    "end": 39.0,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "morphing",
+                    "start": 39.0,
+                    "end": 39.6,
+                    "confidence": 0.718
+                },
+                {
+                    "text": "wheel.",
+                    "start": 39.6,
+                    "end": 40.16,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "The",
+                    "start": 41.28,
+                    "end": 41.58,
+                    "confidence": 0.636
+                },
+                {
+                    "text": "wheels",
+                    "start": 41.58,
+                    "end": 42.0,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "can",
+                    "start": 42.0,
+                    "end": 42.48,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "change",
+                    "start": 42.48,
+                    "end": 43.0,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "their",
+                    "start": 43.0,
+                    "end": 43.44,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "shape",
+                    "start": 43.44,
+                    "end": 43.92,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "and",
+                    "start": 43.92,
+                    "end": 44.58,
+                    "confidence": 0.651
+                },
+                {
+                    "text": "can",
+                    "start": 44.58,
+                    "end": 44.92,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "roll",
+                    "start": 44.92,
+                    "end": 45.18,
+                    "confidence": 0.956
+                },
+                {
+                    "text": "over",
+                    "start": 45.18,
+                    "end": 45.62,
+                    "confidence": 0.842
+                },
+                {
+                    "text": "barriers",
+                    "start": 45.62,
+                    "end": 46.22,
+                    "confidence": 0.76
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "seek": 4656,
+            "start": 46.64,
+            "end": 68.64,
+            "text": " up to 1.3 times their radius. The radius of a wheel is half its height. Other possible applications for the morphing wheel include robots that gather information about an enemy in the battlefield.",
+            "tokens": [
+                50368,
+                493,
+                281,
+                502,
+                13,
+                18,
+                1413,
+                641,
+                15845,
+                13,
+                440,
+                15845,
+                295,
+                257,
+                5589,
+                307,
+                1922,
+                1080,
+                6681,
+                13,
+                5358,
+                1944,
+                5821,
+                337,
+                264,
+                1896,
+                79,
+                571,
+                5589,
+                4090,
+                14733,
+                300,
+                5448,
+                1589,
+                466,
+                364,
+                5945,
+                294,
+                264,
+                21818,
+                13,
+                51464
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.19712628017772327,
+            "compression_ratio": 1.410071942446043,
+            "no_speech_prob": 0.012720311060547829,
+            "confidence": 0.866,
+            "words": [
+                {
+                    "text": "up",
+                    "start": 46.64,
+                    "end": 47.02,
+                    "confidence": 0.961
+                },
+                {
+                    "text": "to",
+                    "start": 47.02,
+                    "end": 47.4,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "1.3",
+                    "start": 47.4,
+                    "end": 49.02,
+                    "confidence": 0.943
+                },
+                {
+                    "text": "times",
+                    "start": 49.02,
+                    "end": 49.76,
+                    "confidence": 0.84
+                },
+                {
+                    "text": "their",
+                    "start": 49.76,
+                    "end": 50.34,
+                    "confidence": 0.976
+                },
+                {
+                    "text": "radius.",
+                    "start": 50.34,
+                    "end": 50.96,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "The",
+                    "start": 52.34,
+                    "end": 52.64,
+                    "confidence": 0.92
+                },
+                {
+                    "text": "radius",
+                    "start": 52.64,
+                    "end": 53.3,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "of",
+                    "start": 53.3,
+                    "end": 53.56,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "a",
+                    "start": 53.56,
+                    "end": 53.94,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "wheel",
+                    "start": 53.94,
+                    "end": 54.16,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "is",
+                    "start": 54.16,
+                    "end": 54.88,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "half",
+                    "start": 54.88,
+                    "end": 55.5,
+                    "confidence": 0.973
+                },
+                {
+                    "text": "its",
+                    "start": 55.5,
+                    "end": 55.98,
+                    "confidence": 0.89
+                },
+                {
+                    "text": "height.",
+                    "start": 55.98,
+                    "end": 56.7,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "Other",
+                    "start": 57.34,
+                    "end": 57.92,
+                    "confidence": 0.721
+                },
+                {
+                    "text": "possible",
+                    "start": 57.92,
+                    "end": 58.72,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "applications",
+                    "start": 58.72,
+                    "end": 59.8,
+                    "confidence": 0.756
+                },
+                {
+                    "text": "for",
+                    "start": 59.8,
+                    "end": 60.42,
+                    "confidence": 0.495
+                },
+                {
+                    "text": "the",
+                    "start": 60.42,
+                    "end": 60.6,
+                    "confidence": 0.821
+                },
+                {
+                    "text": "morphing",
+                    "start": 60.6,
+                    "end": 61.12,
+                    "confidence": 0.964
+                },
+                {
+                    "text": "wheel",
+                    "start": 61.12,
+                    "end": 61.84,
+                    "confidence": 0.846
+                },
+                {
+                    "text": "include",
+                    "start": 61.84,
+                    "end": 62.68,
+                    "confidence": 0.493
+                },
+                {
+                    "text": "robots",
+                    "start": 62.68,
+                    "end": 63.68,
+                    "confidence": 0.646
+                },
+                {
+                    "text": "that",
+                    "start": 63.68,
+                    "end": 64.16,
+                    "confidence": 0.798
+                },
+                {
+                    "text": "gather",
+                    "start": 64.16,
+                    "end": 64.56,
+                    "confidence": 0.93
+                },
+                {
+                    "text": "information",
+                    "start": 64.56,
+                    "end": 65.36,
+                    "confidence": 0.877
+                },
+                {
+                    "text": "about",
+                    "start": 65.36,
+                    "end": 66.16,
+                    "confidence": 0.862
+                },
+                {
+                    "text": "an",
+                    "start": 66.16,
+                    "end": 66.68,
+                    "confidence": 0.398
+                },
+                {
+                    "text": "enemy",
+                    "start": 66.68,
+                    "end": 67.28,
+                    "confidence": 0.948
+                },
+                {
+                    "text": "in",
+                    "start": 67.28,
+                    "end": 68.0,
+                    "confidence": 0.953
+                },
+                {
+                    "text": "the",
+                    "start": 68.0,
+                    "end": 68.16,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "battlefield.",
+                    "start": 68.16,
+                    "end": 68.64,
+                    "confidence": 0.944
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "seek": 6856,
+            "start": 70.3,
+            "end": 81.28,
+            "text": " The KIMM team also hopes that morphing wheels will one day be used with two and four legad robots.",
+            "tokens": [
+                50384,
+                440,
+                591,
+                6324,
+                44,
+                1469,
+                611,
+                13681,
+                300,
+                1896,
+                79,
+                571,
+                10046,
+                486,
+                472,
+                786,
+                312,
+                1143,
+                365,
+                732,
+                293,
+                1451,
+                1676,
+                345,
+                14733,
+                13,
+                50984
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.22291667999759798,
+            "compression_ratio": 1.4502923976608186,
+            "no_speech_prob": 0.36606720089912415,
+            "confidence": 0.844,
+            "words": [
+                {
+                    "text": "The",
+                    "start": 70.3,
+                    "end": 70.62,
+                    "confidence": 0.963
+                },
+                {
+                    "text": "KIMM",
+                    "start": 70.62,
+                    "end": 72.06,
+                    "confidence": 0.981
+                },
+                {
+                    "text": "team",
+                    "start": 72.06,
+                    "end": 72.54,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "also",
+                    "start": 72.54,
+                    "end": 73.12,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "hopes",
+                    "start": 73.12,
+                    "end": 74.06,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "that",
+                    "start": 74.06,
+                    "end": 74.38,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "morphing",
+                    "start": 74.38,
+                    "end": 74.96,
+                    "confidence": 0.979
+                },
+                {
+                    "text": "wheels",
+                    "start": 74.96,
+                    "end": 75.42,
+                    "confidence": 0.968
+                },
+                {
+                    "text": "will",
+                    "start": 75.42,
+                    "end": 76.1,
+                    "confidence": 0.963
+                },
+                {
+                    "text": "one",
+                    "start": 76.1,
+                    "end": 76.52,
+                    "confidence": 0.889
+                },
+                {
+                    "text": "day",
+                    "start": 76.52,
+                    "end": 76.96,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "be",
+                    "start": 76.96,
+                    "end": 77.48,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "used",
+                    "start": 77.48,
+                    "end": 78.1,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "with",
+                    "start": 78.1,
+                    "end": 78.86,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "two",
+                    "start": 78.86,
+                    "end": 79.36,
+                    "confidence": 0.769
+                },
+                {
+                    "text": "and",
+                    "start": 79.36,
+                    "end": 79.76,
+                    "confidence": 0.967
+                },
+                {
+                    "text": "four",
+                    "start": 79.76,
+                    "end": 80.28,
+                    "confidence": 0.959
+                },
+                {
+                    "text": "legad",
+                    "start": 80.28,
+                    "end": 80.84,
+                    "confidence": 0.196
+                },
+                {
+                    "text": "robots.",
+                    "start": 80.84,
+                    "end": 81.28,
+                    "confidence": 0.973
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "seek": 6856,
+            "start": 82.74,
+            "end": 98.12,
+            "text": " Now the movement of those machines is limited. Too much shaking is also a problem. With the morphing wheels, the robots could carry objects that need",
+            "tokens": [
+                50984,
+                823,
+                264,
+                3963,
+                295,
+                729,
+                8379,
+                307,
+                5567,
+                13,
+                11395,
+                709,
+                15415,
+                307,
+                611,
+                257,
+                1154,
+                13,
+                2022,
+                264,
+                1896,
+                79,
+                571,
+                10046,
+                11,
+                264,
+                14733,
+                727,
+                3985,
+                6565,
+                300,
+                643,
+                51828
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.22291667999759798,
+            "compression_ratio": 1.4502923976608186,
+            "no_speech_prob": 0.36606720089912415,
+            "confidence": 0.912,
+            "words": [
+                {
+                    "text": "Now",
+                    "start": 82.74,
+                    "end": 83.14,
+                    "confidence": 0.552
+                },
+                {
+                    "text": "the",
+                    "start": 83.14,
+                    "end": 83.86,
+                    "confidence": 0.57
+                },
+                {
+                    "text": "movement",
+                    "start": 83.86,
+                    "end": 84.36,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "of",
+                    "start": 84.36,
+                    "end": 84.66,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "those",
+                    "start": 84.66,
+                    "end": 85.22,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "machines",
+                    "start": 85.22,
+                    "end": 85.86,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "is",
+                    "start": 85.86,
+                    "end": 86.34,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "limited.",
+                    "start": 86.34,
+                    "end": 86.92,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "Too",
+                    "start": 87.9,
+                    "end": 88.24,
+                    "confidence": 0.932
+                },
+                {
+                    "text": "much",
+                    "start": 88.24,
+                    "end": 88.52,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "shaking",
+                    "start": 88.52,
+                    "end": 89.3,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "is",
+                    "start": 89.3,
+                    "end": 90.06,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "also",
+                    "start": 90.06,
+                    "end": 90.5,
+                    "confidence": 0.938
+                },
+                {
+                    "text": "a",
+                    "start": 90.5,
+                    "end": 91.04,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "problem.",
+                    "start": 91.04,
+                    "end": 91.66,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "With",
+                    "start": 92.36,
+                    "end": 92.72,
+                    "confidence": 0.827
+                },
+                {
+                    "text": "the",
+                    "start": 92.72,
+                    "end": 93.22,
+                    "confidence": 0.967
+                },
+                {
+                    "text": "morphing",
+                    "start": 93.22,
+                    "end": 93.82,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "wheels,",
+                    "start": 93.82,
+                    "end": 94.34,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "the",
+                    "start": 94.92,
+                    "end": 95.02,
+                    "confidence": 0.633
+                },
+                {
+                    "text": "robots",
+                    "start": 95.02,
+                    "end": 95.58,
+                    "confidence": 0.923
+                },
+                {
+                    "text": "could",
+                    "start": 95.58,
+                    "end": 96.12,
+                    "confidence": 0.933
+                },
+                {
+                    "text": "carry",
+                    "start": 96.12,
+                    "end": 96.5,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "objects",
+                    "start": 96.5,
+                    "end": 97.14,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "that",
+                    "start": 97.14,
+                    "end": 97.8,
+                    "confidence": 0.797
+                },
+                {
+                    "text": "need",
+                    "start": 97.8,
+                    "end": 98.12,
+                    "confidence": 0.938
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "seek": 9784,
+            "start": 98.54,
+            "end": 113.32,
+            "text": " smooth movement for industrial use. Songhook is the lead researcher at South Korea's KIMM and a member of the AI robotics research team.",
+            "tokens": [
+                50392,
+                5508,
+                3963,
+                337,
+                9987,
+                764,
+                13,
+                11862,
+                71,
+                1212,
+                307,
+                264,
+                1477,
+                21751,
+                412,
+                4242,
+                6307,
+                311,
+                591,
+                6324,
+                44,
+                293,
+                257,
+                4006,
+                295,
+                264,
+                7318,
+                34145,
+                2132,
+                1469,
+                13,
+                51124
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.1948443382017074,
+            "compression_ratio": 1.4285714285714286,
+            "no_speech_prob": 0.008870718069374561,
+            "confidence": 0.833,
+            "words": [
+                {
+                    "text": "smooth",
+                    "start": 98.54,
+                    "end": 99.0,
+                    "confidence": 0.908
+                },
+                {
+                    "text": "movement",
+                    "start": 99.0,
+                    "end": 99.74,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "for",
+                    "start": 99.74,
+                    "end": 100.36,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "industrial",
+                    "start": 100.36,
+                    "end": 101.06,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "use.",
+                    "start": 101.06,
+                    "end": 101.98,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "Songhook",
+                    "start": 102.96,
+                    "end": 103.92,
+                    "confidence": 0.463
+                },
+                {
+                    "text": "is",
+                    "start": 103.92,
+                    "end": 104.28,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "the",
+                    "start": 104.28,
+                    "end": 104.46,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "lead",
+                    "start": 104.46,
+                    "end": 104.82,
+                    "confidence": 0.972
+                },
+                {
+                    "text": "researcher",
+                    "start": 104.82,
+                    "end": 105.66,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "at",
+                    "start": 105.66,
+                    "end": 106.28,
+                    "confidence": 0.956
+                },
+                {
+                    "text": "South",
+                    "start": 106.28,
+                    "end": 106.78,
+                    "confidence": 0.851
+                },
+                {
+                    "text": "Korea's",
+                    "start": 106.78,
+                    "end": 107.64,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "KIMM",
+                    "start": 107.64,
+                    "end": 108.92,
+                    "confidence": 0.952
+                },
+                {
+                    "text": "and",
+                    "start": 108.92,
+                    "end": 109.34,
+                    "confidence": 0.735
+                },
+                {
+                    "text": "a",
+                    "start": 109.34,
+                    "end": 109.6,
+                    "confidence": 0.763
+                },
+                {
+                    "text": "member",
+                    "start": 109.6,
+                    "end": 109.9,
+                    "confidence": 0.919
+                },
+                {
+                    "text": "of",
+                    "start": 109.9,
+                    "end": 110.32,
+                    "confidence": 0.885
+                },
+                {
+                    "text": "the",
+                    "start": 110.32,
+                    "end": 110.58,
+                    "confidence": 0.943
+                },
+                {
+                    "text": "AI",
+                    "start": 110.58,
+                    "end": 111.0,
+                    "confidence": 0.81
+                },
+                {
+                    "text": "robotics",
+                    "start": 111.0,
+                    "end": 111.92,
+                    "confidence": 0.546
+                },
+                {
+                    "text": "research",
+                    "start": 111.92,
+                    "end": 112.64,
+                    "confidence": 0.567
+                },
+                {
+                    "text": "team.",
+                    "start": 112.64,
+                    "end": 113.32,
+                    "confidence": 0.984
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "seek": 9784,
+            "start": 114.34,
+            "end": 124.98,
+            "text": " He said the goal is to make the wheels work at the average speed of a car. That is about 100 kilometers per hour.",
+            "tokens": [
+                51184,
+                634,
+                848,
+                264,
+                3387,
+                307,
+                281,
+                652,
+                264,
+                10046,
+                589,
+                412,
+                264,
+                4274,
+                3073,
+                295,
+                257,
+                1032,
+                13,
+                663,
+                307,
+                466,
+                2319,
+                13904,
+                680,
+                1773,
+                13,
+                51720
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.1948443382017074,
+            "compression_ratio": 1.4285714285714286,
+            "no_speech_prob": 0.008870718069374561,
+            "confidence": 0.915,
+            "words": [
+                {
+                    "text": "He",
+                    "start": 114.34,
+                    "end": 114.64,
+                    "confidence": 0.618
+                },
+                {
+                    "text": "said",
+                    "start": 114.64,
+                    "end": 115.06,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "the",
+                    "start": 115.06,
+                    "end": 115.42,
+                    "confidence": 0.958
+                },
+                {
+                    "text": "goal",
+                    "start": 115.42,
+                    "end": 115.82,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "is",
+                    "start": 115.82,
+                    "end": 116.34,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "to",
+                    "start": 116.34,
+                    "end": 116.54,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "make",
+                    "start": 116.54,
+                    "end": 116.82,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "the",
+                    "start": 116.82,
+                    "end": 117.12,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "wheels",
+                    "start": 117.12,
+                    "end": 117.46,
+                    "confidence": 0.931
+                },
+                {
+                    "text": "work",
+                    "start": 117.46,
+                    "end": 118.0,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "at",
+                    "start": 118.0,
+                    "end": 118.54,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "the",
+                    "start": 118.54,
+                    "end": 118.88,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "average",
+                    "start": 118.88,
+                    "end": 119.32,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "speed",
+                    "start": 119.32,
+                    "end": 119.94,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "of",
+                    "start": 119.94,
+                    "end": 120.28,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "a",
+                    "start": 120.28,
+                    "end": 120.56,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "car.",
+                    "start": 120.56,
+                    "end": 121.16,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "That",
+                    "start": 121.18,
+                    "end": 122.1,
+                    "confidence": 0.691
+                },
+                {
+                    "text": "is",
+                    "start": 122.1,
+                    "end": 122.42,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "about",
+                    "start": 122.42,
+                    "end": 122.74,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "100",
+                    "start": 122.74,
+                    "end": 123.42,
+                    "confidence": 0.908
+                },
+                {
+                    "text": "kilometers",
+                    "start": 123.42,
+                    "end": 124.32,
+                    "confidence": 0.366
+                },
+                {
+                    "text": "per",
+                    "start": 124.32,
+                    "end": 124.78,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "hour.",
+                    "start": 124.78,
+                    "end": 124.98,
+                    "confidence": 0.99
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "seek": 12496,
+            "start": 126.58,
+            "end": 139.82,
+            "text": " Wheels developed for a similar purpose, such as airless wheels have flexibility, but are limited in their ability to overcome barriers.",
+            "tokens": [
+                50408,
+                49372,
+                4743,
+                337,
+                257,
+                2531,
+                4334,
+                11,
+                1270,
+                382,
+                18856,
+                442,
+                10046,
+                362,
+                12635,
+                11,
+                457,
+                366,
+                5567,
+                294,
+                641,
+                3485,
+                281,
+                10473,
+                13565,
+                13,
+                51124
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2291665662798965,
+            "compression_ratio": 1.5590062111801242,
+            "no_speech_prob": 0.01768019050359726,
+            "confidence": 0.926,
+            "words": [
+                {
+                    "text": "Wheels",
+                    "start": 126.58,
+                    "end": 127.08,
+                    "confidence": 0.767
+                },
+                {
+                    "text": "developed",
+                    "start": 127.08,
+                    "end": 127.86,
+                    "confidence": 0.977
+                },
+                {
+                    "text": "for",
+                    "start": 127.86,
+                    "end": 128.34,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "a",
+                    "start": 128.34,
+                    "end": 128.66,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "similar",
+                    "start": 128.66,
+                    "end": 128.98,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "purpose,",
+                    "start": 128.98,
+                    "end": 129.58,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "such",
+                    "start": 130.6,
+                    "end": 130.8,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "as",
+                    "start": 130.8,
+                    "end": 131.12,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "airless",
+                    "start": 131.12,
+                    "end": 131.98,
+                    "confidence": 0.673
+                },
+                {
+                    "text": "wheels",
+                    "start": 131.98,
+                    "end": 132.6,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "have",
+                    "start": 132.6,
+                    "end": 133.4,
+                    "confidence": 0.931
+                },
+                {
+                    "text": "flexibility,",
+                    "start": 133.4,
+                    "end": 134.36,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "but",
+                    "start": 135.16,
+                    "end": 135.44,
+                    "confidence": 0.75
+                },
+                {
+                    "text": "are",
+                    "start": 135.44,
+                    "end": 135.78,
+                    "confidence": 0.97
+                },
+                {
+                    "text": "limited",
+                    "start": 135.78,
+                    "end": 136.48,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "in",
+                    "start": 136.48,
+                    "end": 137.1,
+                    "confidence": 0.972
+                },
+                {
+                    "text": "their",
+                    "start": 137.1,
+                    "end": 137.38,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "ability",
+                    "start": 137.38,
+                    "end": 138.0,
+                    "confidence": 0.963
+                },
+                {
+                    "text": "to",
+                    "start": 138.0,
+                    "end": 138.5,
+                    "confidence": 0.979
+                },
+                {
+                    "text": "overcome",
+                    "start": 138.5,
+                    "end": 139.1,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "barriers.",
+                    "start": 139.1,
+                    "end": 139.82,
+                    "confidence": 0.982
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "seek": 12496,
+            "start": 140.68,
+            "end": 152.08,
+            "text": " Said Songhook. The difference between airless wheels and the morphing wheel is that airless wheels are always soft,",
+            "tokens": [
+                51124,
+                26490,
+                11862,
+                71,
+                1212,
+                13,
+                440,
+                2649,
+                1296,
+                18856,
+                442,
+                10046,
+                293,
+                264,
+                1896,
+                79,
+                571,
+                5589,
+                307,
+                300,
+                18856,
+                442,
+                10046,
+                366,
+                1009,
+                2787,
+                11,
+                51724
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2291665662798965,
+            "compression_ratio": 1.5590062111801242,
+            "no_speech_prob": 0.01768019050359726,
+            "confidence": 0.896,
+            "words": [
+                {
+                    "text": "Said",
+                    "start": 140.68,
+                    "end": 140.98,
+                    "confidence": 0.489
+                },
+                {
+                    "text": "Songhook.",
+                    "start": 140.98,
+                    "end": 142.96,
+                    "confidence": 0.634
+                },
+                {
+                    "text": "The",
+                    "start": 143.12,
+                    "end": 143.32,
+                    "confidence": 0.858
+                },
+                {
+                    "text": "difference",
+                    "start": 143.32,
+                    "end": 143.86,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "between",
+                    "start": 143.86,
+                    "end": 144.42,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "airless",
+                    "start": 144.42,
+                    "end": 145.32,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "wheels",
+                    "start": 145.32,
+                    "end": 145.94,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "and",
+                    "start": 145.94,
+                    "end": 146.56,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "the",
+                    "start": 146.56,
+                    "end": 147.14,
+                    "confidence": 0.976
+                },
+                {
+                    "text": "morphing",
+                    "start": 147.14,
+                    "end": 147.68,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "wheel",
+                    "start": 147.68,
+                    "end": 148.04,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "is",
+                    "start": 148.04,
+                    "end": 148.56,
+                    "confidence": 0.881
+                },
+                {
+                    "text": "that",
+                    "start": 148.56,
+                    "end": 149.18,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "airless",
+                    "start": 149.18,
+                    "end": 149.86,
+                    "confidence": 0.977
+                },
+                {
+                    "text": "wheels",
+                    "start": 149.86,
+                    "end": 150.2,
+                    "confidence": 0.979
+                },
+                {
+                    "text": "are",
+                    "start": 150.2,
+                    "end": 150.72,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "always",
+                    "start": 150.72,
+                    "end": 151.24,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "soft,",
+                    "start": 151.24,
+                    "end": 152.08,
+                    "confidence": 0.978
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "seek": 15216,
+            "start": 152.58,
+            "end": 158.48,
+            "text": " but the morphing wheels can change from hard to soft when they meet a barrier.",
+            "tokens": [
+                50380,
+                457,
+                264,
+                1896,
+                79,
+                571,
+                10046,
+                393,
+                1319,
+                490,
+                1152,
+                281,
+                2787,
+                562,
+                436,
+                1677,
+                257,
+                13357,
+                13,
+                50680
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07246790359269327,
+            "compression_ratio": 1.6331360946745561,
+            "no_speech_prob": 0.0022661532275378704,
+            "confidence": 0.989,
+            "words": [
+                {
+                    "text": "but",
+                    "start": 152.58,
+                    "end": 152.96,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "the",
+                    "start": 152.96,
+                    "end": 153.34,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "morphing",
+                    "start": 153.34,
+                    "end": 153.84,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "wheels",
+                    "start": 153.84,
+                    "end": 154.24,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "can",
+                    "start": 154.24,
+                    "end": 154.62,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "change",
+                    "start": 154.62,
+                    "end": 155.16,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "from",
+                    "start": 155.16,
+                    "end": 155.72,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "hard",
+                    "start": 155.72,
+                    "end": 156.04,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "to",
+                    "start": 156.04,
+                    "end": 156.32,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "soft",
+                    "start": 156.32,
+                    "end": 156.82,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "when",
+                    "start": 156.82,
+                    "end": 157.24,
+                    "confidence": 0.96
+                },
+                {
+                    "text": "they",
+                    "start": 157.24,
+                    "end": 157.46,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "meet",
+                    "start": 157.46,
+                    "end": 157.82,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "a",
+                    "start": 157.82,
+                    "end": 158.14,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "barrier.",
+                    "start": 158.14,
+                    "end": 158.48,
+                    "confidence": 0.996
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "seek": 15216,
+            "start": 159.76,
+            "end": 166.5,
+            "text": " They can then return to being hard to permit faster travel where there are no barriers.",
+            "tokens": [
+                50736,
+                814,
+                393,
+                550,
+                2736,
+                281,
+                885,
+                1152,
+                281,
+                13423,
+                4663,
+                3147,
+                689,
+                456,
+                366,
+                572,
+                13565,
+                13,
+                51084
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07246790359269327,
+            "compression_ratio": 1.6331360946745561,
+            "no_speech_prob": 0.0022661532275378704,
+            "confidence": 0.99,
+            "words": [
+                {
+                    "text": "They",
+                    "start": 159.76,
+                    "end": 160.04,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "can",
+                    "start": 160.04,
+                    "end": 160.32,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "then",
+                    "start": 160.32,
+                    "end": 160.68,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "return",
+                    "start": 160.68,
+                    "end": 161.46,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "to",
+                    "start": 161.46,
+                    "end": 161.82,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "being",
+                    "start": 161.82,
+                    "end": 162.06,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "hard",
+                    "start": 162.06,
+                    "end": 162.58,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "to",
+                    "start": 162.58,
+                    "end": 162.98,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "permit",
+                    "start": 162.98,
+                    "end": 163.42,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "faster",
+                    "start": 163.42,
+                    "end": 164.08,
+                    "confidence": 0.964
+                },
+                {
+                    "text": "travel",
+                    "start": 164.08,
+                    "end": 164.74,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "where",
+                    "start": 164.74,
+                    "end": 165.36,
+                    "confidence": 0.962
+                },
+                {
+                    "text": "there",
+                    "start": 165.36,
+                    "end": 165.56,
+                    "confidence": 0.976
+                },
+                {
+                    "text": "are",
+                    "start": 165.56,
+                    "end": 165.84,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "no",
+                    "start": 165.84,
+                    "end": 166.06,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "barriers.",
+                    "start": 166.06,
+                    "end": 166.5,
+                    "confidence": 0.998
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "seek": 15216,
+            "start": 168.16,
+            "end": 177.82,
+            "text": " The morphing wheel is made of an outer circle of chain and a series of wires running through its central hub.",
+            "tokens": [
+                51156,
+                440,
+                1896,
+                79,
+                571,
+                5589,
+                307,
+                1027,
+                295,
+                364,
+                10847,
+                6329,
+                295,
+                5021,
+                293,
+                257,
+                2638,
+                295,
+                15537,
+                2614,
+                807,
+                1080,
+                5777,
+                11838,
+                13,
+                51640
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07246790359269327,
+            "compression_ratio": 1.6331360946745561,
+            "no_speech_prob": 0.0022661532275378704,
+            "confidence": 0.97,
+            "words": [
+                {
+                    "text": "The",
+                    "start": 168.16,
+                    "end": 168.38,
+                    "confidence": 0.969
+                },
+                {
+                    "text": "morphing",
+                    "start": 168.38,
+                    "end": 168.94,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "wheel",
+                    "start": 168.94,
+                    "end": 169.36,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "is",
+                    "start": 169.36,
+                    "end": 169.82,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "made",
+                    "start": 169.82,
+                    "end": 170.12,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "of",
+                    "start": 170.12,
+                    "end": 170.44,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "an",
+                    "start": 170.44,
+                    "end": 170.72,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "outer",
+                    "start": 170.72,
+                    "end": 171.04,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "circle",
+                    "start": 171.04,
+                    "end": 171.48,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "of",
+                    "start": 171.48,
+                    "end": 172.06,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "chain",
+                    "start": 172.06,
+                    "end": 172.6,
+                    "confidence": 0.797
+                },
+                {
+                    "text": "and",
+                    "start": 172.6,
+                    "end": 173.66,
+                    "confidence": 0.871
+                },
+                {
+                    "text": "a",
+                    "start": 173.66,
+                    "end": 174.0,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "series",
+                    "start": 174.0,
+                    "end": 174.32,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "of",
+                    "start": 174.32,
+                    "end": 174.62,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "wires",
+                    "start": 174.62,
+                    "end": 175.16,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "running",
+                    "start": 175.16,
+                    "end": 175.78,
+                    "confidence": 0.957
+                },
+                {
+                    "text": "through",
+                    "start": 175.78,
+                    "end": 176.36,
+                    "confidence": 0.974
+                },
+                {
+                    "text": "its",
+                    "start": 176.36,
+                    "end": 176.78,
+                    "confidence": 0.893
+                },
+                {
+                    "text": "central",
+                    "start": 176.78,
+                    "end": 177.4,
+                    "confidence": 0.948
+                },
+                {
+                    "text": "hub.",
+                    "start": 177.4,
+                    "end": 177.82,
+                    "confidence": 0.993
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "seek": 17768,
+            "start": 179.54,
+            "end": 186.56,
+            "text": " A sensor controls the stiffness of the wires in reaction to the barriers in its path.",
+            "tokens": [
+                50392,
+                316,
+                10200,
+                9003,
+                264,
+                37759,
+                295,
+                264,
+                15537,
+                294,
+                5480,
+                281,
+                264,
+                13565,
+                294,
+                1080,
+                3100,
+                13,
+                50804
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.21738046529341717,
+            "compression_ratio": 1.4563758389261745,
+            "no_speech_prob": 0.0075792367570102215,
+            "confidence": 0.986,
+            "words": [
+                {
+                    "text": "A",
+                    "start": 179.54,
+                    "end": 179.7,
+                    "confidence": 0.966
+                },
+                {
+                    "text": "sensor",
+                    "start": 179.7,
+                    "end": 180.02,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "controls",
+                    "start": 180.02,
+                    "end": 180.84,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "the",
+                    "start": 180.84,
+                    "end": 181.34,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "stiffness",
+                    "start": 181.34,
+                    "end": 181.86,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "of",
+                    "start": 181.86,
+                    "end": 182.14,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "the",
+                    "start": 182.14,
+                    "end": 182.4,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "wires",
+                    "start": 182.4,
+                    "end": 182.88,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "in",
+                    "start": 182.88,
+                    "end": 183.64,
+                    "confidence": 0.948
+                },
+                {
+                    "text": "reaction",
+                    "start": 183.64,
+                    "end": 184.16,
+                    "confidence": 0.984
+                },
+                {
+                    "text": "to",
+                    "start": 184.16,
+                    "end": 184.62,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "the",
+                    "start": 184.62,
+                    "end": 184.84,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "barriers",
+                    "start": 184.84,
+                    "end": 185.4,
+                    "confidence": 0.981
+                },
+                {
+                    "text": "in",
+                    "start": 185.4,
+                    "end": 185.86,
+                    "confidence": 0.981
+                },
+                {
+                    "text": "its",
+                    "start": 185.86,
+                    "end": 186.16,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "path.",
+                    "start": 186.16,
+                    "end": 186.56,
+                    "confidence": 0.996
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "seek": 17768,
+            "start": 188.0,
+            "end": 200.18,
+            "text": " Song's team demonstrated to riders a model of a wheelchair riding on morphing wheels as it climbed stairs with 18 centimeter steps.",
+            "tokens": [
+                50872,
+                11862,
+                311,
+                1469,
+                18772,
+                281,
+                23303,
+                257,
+                2316,
+                295,
+                257,
+                22945,
+                9546,
+                322,
+                1896,
+                79,
+                571,
+                10046,
+                382,
+                309,
+                28691,
+                13471,
+                365,
+                2443,
+                31914,
+                4439,
+                13,
+                51488
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.21738046529341717,
+            "compression_ratio": 1.4563758389261745,
+            "no_speech_prob": 0.0075792367570102215,
+            "confidence": 0.823,
+            "words": [
+                {
+                    "text": "Song's",
+                    "start": 188.0,
+                    "end": 188.58,
+                    "confidence": 0.757
+                },
+                {
+                    "text": "team",
+                    "start": 188.58,
+                    "end": 188.88,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "demonstrated",
+                    "start": 188.88,
+                    "end": 189.84,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "to",
+                    "start": 189.84,
+                    "end": 190.4,
+                    "confidence": 0.782
+                },
+                {
+                    "text": "riders",
+                    "start": 190.4,
+                    "end": 190.9,
+                    "confidence": 0.531
+                },
+                {
+                    "text": "a",
+                    "start": 190.9,
+                    "end": 191.62,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "model",
+                    "start": 191.62,
+                    "end": 192.0,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "of",
+                    "start": 192.0,
+                    "end": 192.28,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "a",
+                    "start": 192.28,
+                    "end": 192.56,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "wheelchair",
+                    "start": 192.56,
+                    "end": 193.06,
+                    "confidence": 0.697
+                },
+                {
+                    "text": "riding",
+                    "start": 193.06,
+                    "end": 193.82,
+                    "confidence": 0.94
+                },
+                {
+                    "text": "on",
+                    "start": 193.82,
+                    "end": 194.36,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "morphing",
+                    "start": 194.36,
+                    "end": 194.94,
+                    "confidence": 0.867
+                },
+                {
+                    "text": "wheels",
+                    "start": 194.94,
+                    "end": 195.44,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "as",
+                    "start": 195.44,
+                    "end": 196.08,
+                    "confidence": 0.658
+                },
+                {
+                    "text": "it",
+                    "start": 196.08,
+                    "end": 196.3,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "climbed",
+                    "start": 196.3,
+                    "end": 196.94,
+                    "confidence": 0.604
+                },
+                {
+                    "text": "stairs",
+                    "start": 196.94,
+                    "end": 197.68,
+                    "confidence": 0.639
+                },
+                {
+                    "text": "with",
+                    "start": 197.68,
+                    "end": 198.2,
+                    "confidence": 0.832
+                },
+                {
+                    "text": "18",
+                    "start": 198.2,
+                    "end": 198.96,
+                    "confidence": 0.948
+                },
+                {
+                    "text": "centimeter",
+                    "start": 198.96,
+                    "end": 199.66,
+                    "confidence": 0.417
+                },
+                {
+                    "text": "steps.",
+                    "start": 199.66,
+                    "end": 200.18,
+                    "confidence": 0.972
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "seek": 20016,
+            "start": 201.52,
+            "end": 209.86,
+            "text": " The team has also tested a device using the wheel at speeds of up to 30 kilometers an hour.",
+            "tokens": [
+                50400,
+                440,
+                1469,
+                575,
+                611,
+                8246,
+                257,
+                4302,
+                1228,
+                264,
+                5589,
+                412,
+                16411,
+                295,
+                493,
+                281,
+                2217,
+                13904,
+                364,
+                1773,
+                13,
+                50844
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.25763115882873533,
+            "compression_ratio": 1.0792079207920793,
+            "no_speech_prob": 0.02139374613761902,
+            "confidence": 0.974,
+            "words": [
+                {
+                    "text": "The",
+                    "start": 201.52,
+                    "end": 201.8,
+                    "confidence": 0.979
+                },
+                {
+                    "text": "team",
+                    "start": 201.8,
+                    "end": 202.12,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "has",
+                    "start": 202.12,
+                    "end": 202.5,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "also",
+                    "start": 202.5,
+                    "end": 202.96,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "tested",
+                    "start": 202.96,
+                    "end": 203.36,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "a",
+                    "start": 203.36,
+                    "end": 203.64,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "device",
+                    "start": 203.64,
+                    "end": 204.16,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "using",
+                    "start": 204.16,
+                    "end": 205.0,
+                    "confidence": 0.965
+                },
+                {
+                    "text": "the",
+                    "start": 205.0,
+                    "end": 205.32,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "wheel",
+                    "start": 205.32,
+                    "end": 205.7,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "at",
+                    "start": 205.7,
+                    "end": 206.06,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "speeds",
+                    "start": 206.06,
+                    "end": 206.62,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "of",
+                    "start": 206.62,
+                    "end": 207.02,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "up",
+                    "start": 207.02,
+                    "end": 207.32,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "to",
+                    "start": 207.32,
+                    "end": 207.64,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "30",
+                    "start": 207.64,
+                    "end": 208.18,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "kilometers",
+                    "start": 208.18,
+                    "end": 209.1,
+                    "confidence": 0.802
+                },
+                {
+                    "text": "an",
+                    "start": 209.1,
+                    "end": 209.7,
+                    "confidence": 0.893
+                },
+                {
+                    "text": "hour.",
+                    "start": 209.7,
+                    "end": 209.86,
+                    "confidence": 0.996
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "seek": 20016,
+            "start": 211.16,
+            "end": 212.56,
+            "text": " I'm Andrew Smith.",
+            "tokens": [
+                50904,
+                286,
+                478,
+                10110,
+                8538,
+                13,
+                51004
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.25763115882873533,
+            "compression_ratio": 1.0792079207920793,
+            "no_speech_prob": 0.02139374613761902,
+            "confidence": 0.968,
+            "words": [
+                {
+                    "text": "I'm",
+                    "start": 211.16,
+                    "end": 211.86,
+                    "confidence": 0.952
+                },
+                {
+                    "text": "Andrew",
+                    "start": 211.86,
+                    "end": 212.16,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "Smith.",
+                    "start": 212.16,
+                    "end": 212.56,
+                    "confidence": 0.977
+                }
+            ]
+        }
+    ],
+    "language": "en"
+}

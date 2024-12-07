@@ -6,14 +6,16 @@ from src.common_widget.sentence_line import SentenceLine
 
 
 class ArticleLine(QtWidgets.QWidget):
+    padding = 5
+
     def __init__(self, article, width, parent=None):
         super(ArticleLine, self).__init__(parent)
         self.segments = article.segments
 
-        self.setFixedWidth(width)
+        self.setFixedWidth(width - 2 * self.padding)
 
         self.setLayout(QtWidgets.QVBoxLayout())
-        self.layout().setContentsMargins(2, 2, 2, 2)
+        self.layout().setContentsMargins(self.padding, 0, self.padding, 0)
 
         self.stc_lines = []
         for seg in self.segments:
@@ -35,7 +37,7 @@ class ArticleLine(QtWidgets.QWidget):
 
 
 if __name__ == '__main__':
-    from data_parser import article_object
+    from src.data_parser import article_object
 
     app = QtWidgets.QApplication(sys.argv)
     a2 = ArticleLine(article_object, 400)
